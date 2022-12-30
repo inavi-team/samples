@@ -1,0 +1,9 @@
+source 'https://gitlab.com/inavi_us/inavi-pod-repo.git'
+
+target 'Manifest Sample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  pod 'INVManifest'
+  pod 'INVLicenseManager'
+end

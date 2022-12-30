@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://gitlab.com/inavi_us/inavi-pod-repo.git'
+
+target 'positioner_training' do
+
+  use_frameworks!
+  pod 'INVPositioner'
+
+end

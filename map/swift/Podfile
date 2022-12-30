@@ -1,0 +1,11 @@
+source 'https://gitlab.com/inavi_us/inavi-pod-repo.git'
+
+target 'Map Sample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'YolbilMobileSDK'
+  pod 'INVSensorManager'
+  pod 'INVPackageManager'
+  pod 'INVLicenseManager'
+end

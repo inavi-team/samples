@@ -1,0 +1,82 @@
+PODS:
+  - INVAlglib (0.1.2)
+  - INVCppHelper (0.1.7)
+  - INVCpr (0.1.1):
+    - INVCurl (~> 0.1)
+  - INVCurl (0.1.1):
+    - INVOpenssl (~> 0.1)
+  - INVData (0.1.4):
+    - INVflatbuffers (~> 0.1)
+  - INVeventpp (0.1.2)
+  - INVflatbuffers (0.1.2)
+  - INVLicenseManager (0.1.15):
+    - INVCppHelper (~> 0.1)
+    - INVCpr (~> 0.1)
+    - INVMMKV (~> 0.1)
+    - INVObjects (~> 0.1)
+  - INVMMKV (0.1.1)
+  - INVObjects (0.1.6)
+  - INVOpenssl (0.1.1)
+  - INVPackageManager (0.1.18):
+    - INVCppHelper (~> 0.1)
+    - INVData (~> 0.1)
+    - INVeventpp (~> 0.1)
+    - INVLicenseManager (~> 0.1)
+    - INVMMKV (~> 0.1)
+  - INVPositioner (0.1.15):
+    - INVAlglib (~> 0.1)
+    - INVCppHelper (~> 0.1)
+    - INVData (~> 0.1)
+    - INVeventpp (~> 0.1)
+    - INVPackageManager (~> 0.1)
+    - INVSensorManager (~> 0.1)
+  - INVSensorManager (0.1.20):
+    - INVAlglib (~> 0.1)
+    - INVCppHelper (~> 0.1)
+    - INVData (~> 0.1)
+    - INVeventpp (~> 0.1)
+    - INVSmoothing (~> 0.1)
+  - INVSmoothing (0.1.2)
+
+DEPENDENCIES:
+  - INVPositioner
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - INVCpr
+    - INVCurl
+    - INVMMKV
+    - INVOpenssl
+  https://gitlab.com/inavi_us/inavi-pod-repo.git:
+    - INVAlglib
+    - INVCppHelper
+    - INVData
+    - INVeventpp
+    - INVflatbuffers
+    - INVLicenseManager
+    - INVObjects
+    - INVPackageManager
+    - INVPositioner
+    - INVSensorManager
+    - INVSmoothing
+
+SPEC CHECKSUMS:
+  INVAlglib: facfe2f3850e3b8cce7f01c706441b884c762617
+  INVCppHelper: b86b24c95e222bdd4c94a3f33334d90f12b92020
+  INVCpr: 75fb417421abc0cca03eda632b9da83384054838
+  INVCurl: 4d869387e3846a2dfc1ae7258794084cd2276797
+  INVData: bc7921ce02352f6dbd4d8fc2ece66934902a0b69
+  INVeventpp: 5a9e0795ee0f282dc7d52e3dd0e6f531aa8e1d14
+  INVflatbuffers: 62df56c0e8989bee5a09d26780621be3f013abf7
+  INVLicenseManager: fd75fa6c95c9714179596627e6e8afa5c572d323
+  INVMMKV: e0a002af88e8a7a6f52cdd29c9220fa7336d989d
+  INVObjects: f2e53c39b4fa1d78ad446ead8ba9c33134cb3901
+  INVOpenssl: 9c289fdb2d9ca91cf17d324bbfdb25d16c5af906
+  INVPackageManager: a37b951589403ae6926f272b83f7715c05f79a30
+  INVPositioner: 697d5b1fd7e4f0f728fc84f8673aa8425ec46cbd
+  INVSensorManager: e63cfa95323180a57c86ac0d4b3826d280b618af
+  INVSmoothing: 1918df86ae2409c5f936139beb8855657625e131
+
+PODFILE CHECKSUM: 5f047966a2c1bc234214cb5e3bb2314cb0d024d9
+
+COCOAPODS: 1.11.3

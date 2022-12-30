@@ -1,0 +1,65 @@
+PODS:
+  - INVCppHelper (4.0.0)
+  - INVCpr (0.1.4):
+    - INVCurl
+  - INVCurl (0.1.4):
+    - INVOpenssl
+  - INVData (4.0.0):
+    - INVflatbuffers (~> 0.0)
+  - INVeventpp (0.1.3)
+  - INVflatbuffers (0.1.3)
+  - INVLicenseManager (4.0.0):
+    - INVCppHelper (~> 4.0)
+    - INVCpr (~> 0.0)
+    - INVMMKV (~> 0.0)
+    - INVObjects (~> 4.0)
+  - INVMMKV (0.1.4)
+  - INVNotificationService (4.0.0):
+    - INVCppHelper (~> 4.0)
+    - INVeventpp (~> 0.0)
+    - INVObjects (~> 4.0)
+    - INVPackageManager (~> 4.0)
+  - INVObjects (4.0.0)
+  - INVOpenssl (0.1.4)
+  - INVPackageManager (4.0.0):
+    - INVCppHelper (~> 4.0)
+    - INVData (~> 4.0)
+    - INVeventpp (~> 0.0)
+    - INVLicenseManager (~> 4.0)
+    - INVMMKV (~> 0.0)
+
+DEPENDENCIES:
+  - INVNotificationService
+
+SPEC REPOS:
+  https://gitlab.com/inavi_us/inavi-pod-repo.git:
+    - INVCppHelper
+    - INVCpr
+    - INVCurl
+    - INVData
+    - INVeventpp
+    - INVflatbuffers
+    - INVLicenseManager
+    - INVMMKV
+    - INVNotificationService
+    - INVObjects
+    - INVOpenssl
+    - INVPackageManager
+
+SPEC CHECKSUMS:
+  INVCppHelper: cfaad87eb6c7de9b1d37b1bb3cc1c9f36f25bf02
+  INVCpr: 3a408c5271abd8888c51ecc3530e1a3541af3353
+  INVCurl: b771742da64589f877f7d9a493fb038cc5e290dc
+  INVData: ffd46e3e15c31a484e3203b8426dec6999d11377
+  INVeventpp: da2eb82acae465e4b30f46d0967a8bcd64644c19
+  INVflatbuffers: 251e00ddcb9a553b4558b2634d0e22ebd8951b51
+  INVLicenseManager: c9c1a82ad8a4c23a305c0f6b24864aaabd5f2ed3
+  INVMMKV: 3d5fe8c44894f933a1d42c35470ecc04c4babf2d
+  INVNotificationService: 3a96c04e874d8b0abbd2160a9625249ecd26f28c
+  INVObjects: b544534a085862c7b9639322b2b160e6e7bdff37
+  INVOpenssl: a1ad9945cb08356da764cc72e1c98735f516704f
+  INVPackageManager: 802e613e8213d284d18f7f7ec3a9d9764ce4917e
+
+PODFILE CHECKSUM: 1edbe85ccdb0f57c367608683d32b261f67450a6
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,40 @@
+PODS:
+  - INVAlglib (0.1.2)
+  - INVCppHelper (0.1.7)
+  - INVData (0.1.4):
+    - INVflatbuffers (~> 0.1)
+  - INVeventpp (0.1.2)
+  - INVflatbuffers (0.1.2)
+  - INVSensorManager (0.1.21):
+    - INVAlglib (~> 0.1)
+    - INVCppHelper (~> 0.1)
+    - INVData (~> 0.1)
+    - INVeventpp (~> 0.1)
+    - INVSmoothing (~> 0.1)
+  - INVSmoothing (0.1.2)
+
+DEPENDENCIES:
+  - INVSensorManager
+
+SPEC REPOS:
+  https://gitlab.com/inavi_us/inavi-pod-repo.git:
+    - INVAlglib
+    - INVCppHelper
+    - INVData
+    - INVeventpp
+    - INVflatbuffers
+    - INVSensorManager
+    - INVSmoothing
+
+SPEC CHECKSUMS:
+  INVAlglib: facfe2f3850e3b8cce7f01c706441b884c762617
+  INVCppHelper: b86b24c95e222bdd4c94a3f33334d90f12b92020
+  INVData: bc7921ce02352f6dbd4d8fc2ece66934902a0b69
+  INVeventpp: 5a9e0795ee0f282dc7d52e3dd0e6f531aa8e1d14
+  INVflatbuffers: 62df56c0e8989bee5a09d26780621be3f013abf7
+  INVSensorManager: 72e32b27dde8d8d3fd7d84942587e674e0191348
+  INVSmoothing: 1918df86ae2409c5f936139beb8855657625e131
+
+PODFILE CHECKSUM: 3ca7260a28ffb895519c98a4529d651edcab8f9b
+
+COCOAPODS: 1.11.3
