@@ -1,69 +1,68 @@
 PODS:
-  - INVcglib (0.1.2)
-  - INVCppHelper (0.1.7)
-  - INVCpr (0.1.1):
-    - INVCurl (~> 0.1)
-  - INVCurl (0.1.1):
-    - INVOpenssl (~> 0.1)
-  - INVData (0.1.4):
-    - INVflatbuffers (~> 0.1)
-  - INVeventpp (0.1.2)
-  - INVflatbuffers (0.1.2)
-  - INVhttprequest (0.1.2)
-  - INVLicenseManager (0.1.15):
-    - INVCppHelper (~> 0.1)
-    - INVCpr (~> 0.1)
-    - INVMMKV (~> 0.1)
-    - INVObjects (~> 0.1)
-  - INVManifest (0.1.12):
-    - INVCppHelper (~> 0.1)
-    - INVObjects (~> 0.1)
-  - INVMMKV (0.1.1)
-  - INVObjects (0.1.6)
-  - INVOpenssl (0.1.1)
-  - INVPackageManager (0.1.18):
-    - INVCppHelper (~> 0.1)
-    - INVData (~> 0.1)
-    - INVeventpp (~> 0.1)
-    - INVLicenseManager (~> 0.1)
-    - INVMMKV (~> 0.1)
-  - INVpicojson (0.1.2)
-  - INVRouting (0.1.11):
+  - INVcglib (0.1.3)
+  - INVCppHelper (4.0.0)
+  - INVCpr (0.1.4):
+    - INVCurl
+  - INVCurl (0.1.4):
+    - INVOpenssl
+  - INVData (4.0.0):
+    - INVflatbuffers (~> 0.0)
+  - INVeventpp (0.1.3)
+  - INVflatbuffers (0.1.3)
+  - INVhttprequest (0.1.3)
+  - INVLicenseManager (4.0.0):
+    - INVCppHelper (~> 4.0)
+    - INVCpr (~> 0.0)
+    - INVMMKV (~> 0.0)
+    - INVObjects (~> 4.0)
+  - INVManifest (4.0.8):
+    - INVCppHelper (~> 4.0)
+    - INVObjects (~> 4.0)
+  - INVMMKV (0.1.4)
+  - INVObjects (4.0.0)
+  - INVOpenssl (0.1.4)
+  - INVPackageManager (4.0.0):
+    - INVCppHelper (~> 4.0)
+    - INVData (~> 4.0)
+    - INVeventpp (~> 0.0)
+    - INVLicenseManager (~> 4.0)
+    - INVMMKV (~> 0.0)
+  - INVpicojson (0.1.3)
+  - INVRouting (4.0.0):
+    - INVcglib (~> 0.0)
+    - INVCppHelper (~> 4.0)
+    - INVhttprequest (~> 0.0)
+    - INVObjects (~> 4.0)
+    - INVPackageManager (~> 4.0)
+    - INVpicojson (~> 0.0)
+    - INVSGRE (~> 0.0)
+    - INVtess2 (~> 0.0)
+  - INVSGRE (0.1.3):
     - INVcglib (~> 0.1)
-    - INVCppHelper (~> 0.1)
-    - INVhttprequest (~> 0.1)
-    - INVObjects (~> 0.1)
-    - INVPackageManager (~> 0.1)
-    - INVpicojson (~> 0.1)
-    - INVSGRE (~> 0.1)
-    - INVtess2 (~> 0.1)
-  - INVSGRE (0.1.2):
-    - INVcglib (~> 0.1)
     - INVhttprequest (~> 0.1)
     - INVpicojson (~> 0.1)
     - INVtess2 (~> 0.1)
-  - INVtess2 (0.1.2)
+  - INVtess2 (0.1.3)
 
 DEPENDENCIES:
   - INVManifest
   - INVRouting
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - INVCpr
-    - INVCurl
-    - INVMMKV
-    - INVOpenssl
   https://gitlab.com/inavi_us/inavi-pod-repo.git:
     - INVcglib
     - INVCppHelper
+    - INVCpr
+    - INVCurl
     - INVData
     - INVeventpp
     - INVflatbuffers
     - INVhttprequest
     - INVLicenseManager
     - INVManifest
+    - INVMMKV
     - INVObjects
+    - INVOpenssl
     - INVPackageManager
     - INVpicojson
     - INVRouting
@@ -71,24 +70,24 @@ SPEC REPOS:
     - INVtess2
 
 SPEC CHECKSUMS:
-  INVcglib: 29327f149d0d6c88390a95fa5429aa7fb09c2207
-  INVCppHelper: b86b24c95e222bdd4c94a3f33334d90f12b92020
-  INVCpr: 75fb417421abc0cca03eda632b9da83384054838
-  INVCurl: 4d869387e3846a2dfc1ae7258794084cd2276797
-  INVData: bc7921ce02352f6dbd4d8fc2ece66934902a0b69
-  INVeventpp: 5a9e0795ee0f282dc7d52e3dd0e6f531aa8e1d14
-  INVflatbuffers: 62df56c0e8989bee5a09d26780621be3f013abf7
-  INVhttprequest: e2193e65494789bfeadfd71593bc677550a9d1ab
-  INVLicenseManager: fd75fa6c95c9714179596627e6e8afa5c572d323
-  INVManifest: f659bdd3288ee2f1703cd8ae59d4da9f1e6a4edf
-  INVMMKV: e0a002af88e8a7a6f52cdd29c9220fa7336d989d
-  INVObjects: f2e53c39b4fa1d78ad446ead8ba9c33134cb3901
-  INVOpenssl: 9c289fdb2d9ca91cf17d324bbfdb25d16c5af906
-  INVPackageManager: a37b951589403ae6926f272b83f7715c05f79a30
-  INVpicojson: 1efdd3e17094b2933fa0076f02c0f14e62325fd5
-  INVRouting: bdacd45d35df34cda910606136b535c29c82319a
-  INVSGRE: ac04ea3138419f8e6b4a7b30bb2f22a01b51287b
-  INVtess2: ec87dc5ed16763916b6d1e55bc1e041ee0ad5186
+  INVcglib: 64b91cefb9956495ddbcd8a808bf80904a202a2f
+  INVCppHelper: cfaad87eb6c7de9b1d37b1bb3cc1c9f36f25bf02
+  INVCpr: 3a408c5271abd8888c51ecc3530e1a3541af3353
+  INVCurl: b771742da64589f877f7d9a493fb038cc5e290dc
+  INVData: ffd46e3e15c31a484e3203b8426dec6999d11377
+  INVeventpp: da2eb82acae465e4b30f46d0967a8bcd64644c19
+  INVflatbuffers: 251e00ddcb9a553b4558b2634d0e22ebd8951b51
+  INVhttprequest: 20cabdacb8b375872bc782e476c15341491f4438
+  INVLicenseManager: c9c1a82ad8a4c23a305c0f6b24864aaabd5f2ed3
+  INVManifest: 69df3f790584688bfcd7c4fc0cd9dad17e84639a
+  INVMMKV: 3d5fe8c44894f933a1d42c35470ecc04c4babf2d
+  INVObjects: b544534a085862c7b9639322b2b160e6e7bdff37
+  INVOpenssl: a1ad9945cb08356da764cc72e1c98735f516704f
+  INVPackageManager: 802e613e8213d284d18f7f7ec3a9d9764ce4917e
+  INVpicojson: 2a4191bba1f3456a8b26780760c17788a2202a10
+  INVRouting: d43279e064e97e854ea1f301eab5407bb4a02824
+  INVSGRE: aa3b1b36d3aa540024f3180489b1bcc2d20ad940
+  INVtess2: 85ea168b3c9fc4c43d497141283722c9820c6bc7
 
 PODFILE CHECKSUM: dfaa88b89ebed685f1fd2e9f463e1113f6213fdd
 

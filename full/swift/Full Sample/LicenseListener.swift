@@ -29,7 +29,7 @@ class LicenseListener: INVLicenseListener {
     }
 
     override func onLicenseError(message: String) {
-        print("License failed")
+        print("License failed: " + message)
     }
 
 }

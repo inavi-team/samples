@@ -1,71 +1,71 @@
 PODS:
-  - INVAlglib (0.1.2)
-  - INVcglib (0.1.2)
-  - INVCppHelper (0.1.7)
-  - INVCpr (0.1.1):
-    - INVCurl (~> 0.1)
-  - INVCurl (0.1.1):
-    - INVOpenssl (~> 0.1)
-  - INVData (0.1.4):
-    - INVflatbuffers (~> 0.1)
-  - INVeventpp (0.1.2)
-  - INVflatbuffers (0.1.2)
-  - INVhttprequest (0.1.2)
-  - INVLicenseManager (0.1.15):
-    - INVCppHelper (~> 0.1)
-    - INVCpr (~> 0.1)
-    - INVMMKV (~> 0.1)
-    - INVObjects (~> 0.1)
-  - INVManifest (0.1.12):
-    - INVCppHelper (~> 0.1)
-    - INVObjects (~> 0.1)
-  - INVMMKV (0.1.1)
-  - INVNotificationService (0.1.8):
-    - INVCppHelper (~> 0.1)
-    - INVeventpp (~> 0.1)
-    - INVObjects (~> 0.1)
-    - INVPackageManager (~> 0.1)
-  - INVObjects (0.1.6)
-  - INVOpenssl (0.1.1)
-  - INVPackageManager (0.1.18):
-    - INVCppHelper (~> 0.1)
-    - INVData (~> 0.1)
-    - INVeventpp (~> 0.1)
-    - INVLicenseManager (~> 0.1)
-    - INVMMKV (~> 0.1)
-  - INVpicojson (0.1.2)
-  - INVPositioner (0.1.15):
-    - INVAlglib (~> 0.1)
-    - INVCppHelper (~> 0.1)
-    - INVData (~> 0.1)
-    - INVeventpp (~> 0.1)
-    - INVPackageManager (~> 0.1)
-    - INVSensorManager (~> 0.1)
-  - INVRouting (0.1.11):
+  - INVAlglib (0.1.3)
+  - INVcglib (0.1.3)
+  - INVCppHelper (4.0.0)
+  - INVCpr (0.1.4):
+    - INVCurl
+  - INVCurl (0.1.4):
+    - INVOpenssl
+  - INVData (4.0.0):
+    - INVflatbuffers (~> 0.0)
+  - INVeventpp (0.1.3)
+  - INVflatbuffers (0.1.3)
+  - INVhttprequest (0.1.3)
+  - INVLicenseManager (4.0.0):
+    - INVCppHelper (~> 4.0)
+    - INVCpr (~> 0.0)
+    - INVMMKV (~> 0.0)
+    - INVObjects (~> 4.0)
+  - INVManifest (4.0.8):
+    - INVCppHelper (~> 4.0)
+    - INVObjects (~> 4.0)
+  - INVMMKV (0.1.4)
+  - INVNotificationService (4.0.0):
+    - INVCppHelper (~> 4.0)
+    - INVeventpp (~> 0.0)
+    - INVObjects (~> 4.0)
+    - INVPackageManager (~> 4.0)
+  - INVObjects (4.0.0)
+  - INVOpenssl (0.1.4)
+  - INVPackageManager (4.0.0):
+    - INVCppHelper (~> 4.0)
+    - INVData (~> 4.0)
+    - INVeventpp (~> 0.0)
+    - INVLicenseManager (~> 4.0)
+    - INVMMKV (~> 0.0)
+  - INVpicojson (0.1.3)
+  - INVPositioner (4.0.2):
+    - INVAlglib (~> 0.0)
+    - INVCppHelper (~> 4.0)
+    - INVData (~> 4.0)
+    - INVeventpp (~> 0.0)
+    - INVPackageManager (~> 4.0)
+    - INVSensorManager (~> 4.0)
+  - INVRouting (4.0.0):
+    - INVcglib (~> 0.0)
+    - INVCppHelper (~> 4.0)
+    - INVhttprequest (~> 0.0)
+    - INVObjects (~> 4.0)
+    - INVPackageManager (~> 4.0)
+    - INVpicojson (~> 0.0)
+    - INVSGRE (~> 0.0)
+    - INVtess2 (~> 0.0)
+  - INVSensorManager (4.0.0):
+    - INVAlglib (~> 0.0)
+    - INVCppHelper (~> 4.0)
+    - INVData (~> 4.0)
+    - INVeventpp (~> 0.0)
+    - INVSmoothing (~> 4.0)
+  - INVSGRE (0.1.3):
     - INVcglib (~> 0.1)
-    - INVCppHelper (~> 0.1)
-    - INVhttprequest (~> 0.1)
-    - INVObjects (~> 0.1)
-    - INVPackageManager (~> 0.1)
-    - INVpicojson (~> 0.1)
-    - INVSGRE (~> 0.1)
-    - INVtess2 (~> 0.1)
-  - INVSensorManager (0.1.21):
-    - INVAlglib (~> 0.1)
-    - INVCppHelper (~> 0.1)
-    - INVData (~> 0.1)
-    - INVeventpp (~> 0.1)
-    - INVSmoothing (~> 0.1)
-  - INVSGRE (0.1.2):
-    - INVcglib (~> 0.1)
     - INVhttprequest (~> 0.1)
     - INVpicojson (~> 0.1)
     - INVtess2 (~> 0.1)
-  - INVSmoothing (0.1.2)
-  - INVtess2 (0.1.2)
-  - YolbilMobileSDK (2.4.6):
-    - INVPackageManager (~> 0.1)
-    - INVSensorManager (~> 0.1)
+  - INVSmoothing (4.0.0)
+  - INVtess2 (0.1.3)
+  - YolbilMobileSDK (2.4.8):
+    - INVPackageManager (~> 4.0)
+    - INVSensorManager (~> 4.0)
 
 DEPENDENCIES:
   - INVManifest
@@ -103,30 +103,30 @@ SPEC REPOS:
     - YolbilMobileSDK
 
 SPEC CHECKSUMS:
-  INVAlglib: facfe2f3850e3b8cce7f01c706441b884c762617
-  INVcglib: 29327f149d0d6c88390a95fa5429aa7fb09c2207
-  INVCppHelper: b86b24c95e222bdd4c94a3f33334d90f12b92020
-  INVCpr: 72cfe299ef832685f8d16acb5cefe4a22618c7a8
-  INVCurl: 9b4ab56147b20f55b763491cd74c10b404923994
-  INVData: bc7921ce02352f6dbd4d8fc2ece66934902a0b69
-  INVeventpp: 5a9e0795ee0f282dc7d52e3dd0e6f531aa8e1d14
-  INVflatbuffers: 62df56c0e8989bee5a09d26780621be3f013abf7
-  INVhttprequest: e2193e65494789bfeadfd71593bc677550a9d1ab
-  INVLicenseManager: fd75fa6c95c9714179596627e6e8afa5c572d323
-  INVManifest: f659bdd3288ee2f1703cd8ae59d4da9f1e6a4edf
-  INVMMKV: 00356cb06d8fb9666c71adf64c8ddd4b4c5ff67a
-  INVNotificationService: 237f7c956a6eb6422c50fe3db1c2a2fc7c2f9d3b
-  INVObjects: f2e53c39b4fa1d78ad446ead8ba9c33134cb3901
-  INVOpenssl: d849268646cf41b329db2baa97e0f91ec12fcd0d
-  INVPackageManager: a37b951589403ae6926f272b83f7715c05f79a30
-  INVpicojson: 1efdd3e17094b2933fa0076f02c0f14e62325fd5
-  INVPositioner: 697d5b1fd7e4f0f728fc84f8673aa8425ec46cbd
-  INVRouting: bdacd45d35df34cda910606136b535c29c82319a
-  INVSensorManager: 72e32b27dde8d8d3fd7d84942587e674e0191348
-  INVSGRE: ac04ea3138419f8e6b4a7b30bb2f22a01b51287b
-  INVSmoothing: 1918df86ae2409c5f936139beb8855657625e131
-  INVtess2: ec87dc5ed16763916b6d1e55bc1e041ee0ad5186
-  YolbilMobileSDK: 7b077cf1adf221d5f7b0278ea4c1461e685c4795
+  INVAlglib: b0a16ebbebfc9bc3c89981326539d4f924aae5d6
+  INVcglib: 64b91cefb9956495ddbcd8a808bf80904a202a2f
+  INVCppHelper: cfaad87eb6c7de9b1d37b1bb3cc1c9f36f25bf02
+  INVCpr: 3a408c5271abd8888c51ecc3530e1a3541af3353
+  INVCurl: b771742da64589f877f7d9a493fb038cc5e290dc
+  INVData: ffd46e3e15c31a484e3203b8426dec6999d11377
+  INVeventpp: da2eb82acae465e4b30f46d0967a8bcd64644c19
+  INVflatbuffers: 251e00ddcb9a553b4558b2634d0e22ebd8951b51
+  INVhttprequest: 20cabdacb8b375872bc782e476c15341491f4438
+  INVLicenseManager: c9c1a82ad8a4c23a305c0f6b24864aaabd5f2ed3
+  INVManifest: 69df3f790584688bfcd7c4fc0cd9dad17e84639a
+  INVMMKV: 3d5fe8c44894f933a1d42c35470ecc04c4babf2d
+  INVNotificationService: 3a96c04e874d8b0abbd2160a9625249ecd26f28c
+  INVObjects: b544534a085862c7b9639322b2b160e6e7bdff37
+  INVOpenssl: a1ad9945cb08356da764cc72e1c98735f516704f
+  INVPackageManager: 802e613e8213d284d18f7f7ec3a9d9764ce4917e
+  INVpicojson: 2a4191bba1f3456a8b26780760c17788a2202a10
+  INVPositioner: cd36d948803036e5cfdacb8999636f535f54eac9
+  INVRouting: d43279e064e97e854ea1f301eab5407bb4a02824
+  INVSensorManager: 0ee9036cd2e643c7659fd19285134aeb4cf48765
+  INVSGRE: aa3b1b36d3aa540024f3180489b1bcc2d20ad940
+  INVSmoothing: aaa1570daf58fcae5bef0da0ce5031a97dc89242
+  INVtess2: 85ea168b3c9fc4c43d497141283722c9820c6bc7
+  YolbilMobileSDK: 5e964c49f7dd301b6b5804997e2bbb500b71873b
 
 PODFILE CHECKSUM: e68a2e63215a65928ae3d147b2225f89156309ec
 

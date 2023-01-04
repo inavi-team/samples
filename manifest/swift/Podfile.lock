@@ -1,20 +1,20 @@
 PODS:
-  - INVCppHelper (0.1.7)
-  - INVCpr (0.1.1):
-    - INVCurl (~> 0.1)
-  - INVCurl (0.1.1):
-    - INVOpenssl (~> 0.1)
-  - INVLicenseManager (0.1.15):
-    - INVCppHelper (~> 0.1)
-    - INVCpr (~> 0.1)
-    - INVMMKV (~> 0.1)
-    - INVObjects (~> 0.1)
-  - INVManifest (0.1.12):
-    - INVCppHelper (~> 0.1)
-    - INVObjects (~> 0.1)
-  - INVMMKV (0.1.1)
-  - INVObjects (0.1.6)
-  - INVOpenssl (0.1.1)
+  - INVCppHelper (4.0.0)
+  - INVCpr (0.1.4):
+    - INVCurl
+  - INVCurl (0.1.4):
+    - INVOpenssl
+  - INVLicenseManager (4.0.0):
+    - INVCppHelper (~> 4.0)
+    - INVCpr (~> 0.0)
+    - INVMMKV (~> 0.0)
+    - INVObjects (~> 4.0)
+  - INVManifest (4.0.8):
+    - INVCppHelper (~> 4.0)
+    - INVObjects (~> 4.0)
+  - INVMMKV (0.1.4)
+  - INVObjects (4.0.0)
+  - INVOpenssl (0.1.4)
 
 DEPENDENCIES:
   - INVLicenseManager
@@ -32,14 +32,14 @@ SPEC REPOS:
     - INVOpenssl
 
 SPEC CHECKSUMS:
-  INVCppHelper: b86b24c95e222bdd4c94a3f33334d90f12b92020
-  INVCpr: 72cfe299ef832685f8d16acb5cefe4a22618c7a8
-  INVCurl: 9b4ab56147b20f55b763491cd74c10b404923994
-  INVLicenseManager: fd75fa6c95c9714179596627e6e8afa5c572d323
-  INVManifest: f659bdd3288ee2f1703cd8ae59d4da9f1e6a4edf
-  INVMMKV: 00356cb06d8fb9666c71adf64c8ddd4b4c5ff67a
-  INVObjects: f2e53c39b4fa1d78ad446ead8ba9c33134cb3901
-  INVOpenssl: d849268646cf41b329db2baa97e0f91ec12fcd0d
+  INVCppHelper: cfaad87eb6c7de9b1d37b1bb3cc1c9f36f25bf02
+  INVCpr: 3a408c5271abd8888c51ecc3530e1a3541af3353
+  INVCurl: b771742da64589f877f7d9a493fb038cc5e290dc
+  INVLicenseManager: c9c1a82ad8a4c23a305c0f6b24864aaabd5f2ed3
+  INVManifest: 69df3f790584688bfcd7c4fc0cd9dad17e84639a
+  INVMMKV: 3d5fe8c44894f933a1d42c35470ecc04c4babf2d
+  INVObjects: b544534a085862c7b9639322b2b160e6e7bdff37
+  INVOpenssl: a1ad9945cb08356da764cc72e1c98735f516704f
 
 PODFILE CHECKSUM: 02a5b8c252c794df413d44d0a517a0f6da8bdc9e
 

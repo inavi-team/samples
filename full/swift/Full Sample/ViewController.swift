@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             INVBuildingLicenseRequest(id: Const.BUILDING_ID, version: Const.BUILDING_VERSION_MAJOR_STRING, type: POSITIONING),
             INVBuildingLicenseRequest(id: Const.BUILDING_ID, version: Const.BUILDING_VERSION_MAJOR_STRING, type: ROUTING),
         ]
-        licenseRequestMap.put(apiKey: "ENTER_YOUR_API_KEY", licenseRequests: licenseRequests)
+        licenseRequestMap.put(apiKey: Const.API_KEY, licenseRequests: licenseRequests)
         licenseListener = LicenseListener(vc: self)
         INVLicenseManager.requestLicense(licenseRequestMap: licenseRequestMap, licenseListener: licenseListener)
     }
@@ -240,9 +240,10 @@ class ViewController: UIViewController {
         searchRequest.setGeometry(YBPointGeometry(pos: YBEPSG3857().fromWgs84(YBMapPos(x: center[0], y: center[1]))))
         searchRequest.setFilterExpression("REGEXP_ILIKE(name,'(.*)\(keyword)(.*)') AND categories IS NOT NULL")
         let result = searchService.findFeatures(searchRequest)
-        if let it = result {
-            for i in 0...it.getFeatureCount() - 1 {
-                let feature = it.getFeature(i)!
+        let featureCount = result?.getFeatureCount();
+        if(result != nil && featureCount != nil && featureCount! > 0){
+            for i in 0...featureCount! - 1 {
+                let feature = result!.getFeature(i)!
                 let name = feature.getProperties().getObjectElement("name").getString()!
                 let floor = feature.getProperties().getObjectElement("floor").getLong()
                 let coords = feature.getGeometry().getCenterPos()!
