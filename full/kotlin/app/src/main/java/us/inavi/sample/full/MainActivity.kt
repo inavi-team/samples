@@ -52,7 +52,7 @@ class MyVectorTileEventListener (var tileDecoder: MBVectorTileDecoder) : VectorT
     override fun onVectorTileClicked(clickInfo: VectorTileClickInfo?): Boolean {
         clickInfo?.let { info ->
             val id = info.feature.properties.getObjectElement("id").string
-            val name = info.feature.properties.getObjectElement("name").string
+            val name = JSONObject(info.feature.properties.getObjectElement("name").string).getString("en")
             Log.d(LOG_TAG, "onVectorTileClicked -> name: $name, id: $id")
             tileDecoder.setStyleParameter("selectedObjectId", id)
         }
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity(), DownloadListener, LicenseListener {
     var floor: Int = 0
 
     val LOG_TAG: String = "iNavi"
-    val BUILDING_ID: String = "ENTER_YOUR_BUILDING_ID"
+    val BUILDING_ID: String = "ououRcPNsf"
     val BUILDING_VERSION_MAJOR_STRING: String = "2"
     val BUILDING_VERSION_MAJOR: Int = 2
     lateinit var mapView: MapView
@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity(), DownloadListener, LicenseListener {
             BuildingLicenseRequest(BUILDING_ID, BUILDING_VERSION_MAJOR_STRING, BuildingDataType.POSITIONING),
             BuildingLicenseRequest(BUILDING_ID, BUILDING_VERSION_MAJOR_STRING, BuildingDataType.ROUTING),
         )
-        licenseRequestMap.put("ENTER_YOUR_API_KEY", licenseRequests)
+        licenseRequestMap.put("apiKey", licenseRequests)
         LicenseManager.requestLicense(licenseRequestMap, this)
     }
 
@@ -213,6 +213,8 @@ class MainActivity : AppCompatActivity(), DownloadListener, LicenseListener {
         val pos = MapPos(3646477.0, 4851624.0)
         mapView.setFocusPos(pos, 0f)
         mapView.setZoom(17f, 0f)
+
+        tileDecoder.setStyleParameter("language", "tr")
     }
 
     fun addBlueDot() {
@@ -231,7 +233,7 @@ class MainActivity : AppCompatActivity(), DownloadListener, LicenseListener {
         val routeGeoJSON = routing.calculateRouteAsGeoJSON(points, CoordType.EPSG3857)
         routeJson = JSONObject(routeGeoJSON)
         manifest = iNaviManifest(routeGeoJSON, 1.0)
-        val staticManifest = manifest.getStaticManifestResult(this)
+        val staticManifest = manifest.getStaticManifestResult(this,"en")
         staticManifest.manifestResults.forEach {
             Log.d(LOG_TAG, it.stringCommand)
         }
@@ -243,7 +245,7 @@ class MainActivity : AppCompatActivity(), DownloadListener, LicenseListener {
         val buildingList = PackageManager.getBuildingList()
         buildingInfo = buildingList.filter { it.id == BUILDING_ID }[0]
         buildingList.forEach { buildingInfo ->
-            Log.d(LOG_TAG, "Building Id: " + buildingInfo.id + ", version: " + buildingInfo.version)
+            Log.d(LOG_TAG, "Building Id: " + buildingInfo.id + ", version: " + buildingInfo.version +", name: " + buildingInfo.languageMap.getValue("en").name)
         }
         PackageManager.downloadBuildingData(
             BUILDING_ID,
