@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity(), DownloadListener, LicenseListener {
     var floor: Int = 0
 
     val LOG_TAG: String = "iNavi"
-    val BUILDING_ID: String = "ououRcPNsf"
+    val BUILDING_ID: String = "ENTER_YOUR_BUILDING_ID"
     val BUILDING_VERSION_MAJOR_STRING: String = "2"
     val BUILDING_VERSION_MAJOR: Int = 2
     lateinit var mapView: MapView
@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity(), DownloadListener, LicenseListener {
             BuildingLicenseRequest(BUILDING_ID, BUILDING_VERSION_MAJOR_STRING, BuildingDataType.POSITIONING),
             BuildingLicenseRequest(BUILDING_ID, BUILDING_VERSION_MAJOR_STRING, BuildingDataType.ROUTING),
         )
-        licenseRequestMap.put("apiKey", licenseRequests)
+        licenseRequestMap.put("ENTER_YOUR_API_KEY", licenseRequests)
         LicenseManager.requestLicense(licenseRequestMap, this)
     }
 
